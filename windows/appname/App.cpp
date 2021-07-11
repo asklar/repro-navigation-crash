@@ -25,6 +25,8 @@ App::App() noexcept
     InstanceSettings().UseFastRefresh(false);
 #else
     JavaScriptBundleFile(L"index");
+//    InstanceSettings().UseDirectDebugger(true);
+//    InstanceSettings().UseWebDebugger(false);
     InstanceSettings().UseWebDebugger(true);
     InstanceSettings().UseFastRefresh(true);
 #endif
