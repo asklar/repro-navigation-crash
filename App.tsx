@@ -48,7 +48,7 @@ const AddScreen: React.FC<{navigation: AddScreenNavigationProp}> = ({
             <Text>Go back (Pressable)</Text>
           </View>
         </Pressable>
-        <Button content="Go back (XAML Button)" onClick={goBack} />
+        <Button onPress={goBack} title="Go back (RN Button)" />
       </View>
     </SafeAreaView>
   );
