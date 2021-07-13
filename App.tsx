@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react';
-import {SafeAreaView, Text, View, Pressable, Button} from 'react-native';
-//import {Button} from 'react-native-xaml';
+import {SafeAreaView, Text, View, Pressable,} from 'react-native';
+import {Button} from 'react-native-xaml';
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import {
   createStackNavigator,
@@ -48,7 +48,8 @@ const AddScreen: React.FC<{navigation: AddScreenNavigationProp}> = ({
             <Text>Go back (Pressable)</Text>
           </View>
         </Pressable>
-        <Button onPress={goBack} title="Go back (RN Button)" />
+        {/* <Button onPress={goBack} title="Go back (RN Button)" /> */}
+        <Button onClick={goBack} content="Go back (XAML Button)" />
       </View>
     </SafeAreaView>
   );
